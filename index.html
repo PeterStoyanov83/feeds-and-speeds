@@ -203,6 +203,9 @@
       { name: "MDF",          color: "#9A8070", chipload: buildChiploads(1.30) },
       { name: "Soft Plastic", color: "#4A90D9", chipload: buildChiploads(0.90) },
       { name: "Hard Plastic", color: "#2C5F8A", chipload: buildChiploads(0.65) },
+      { name: "Bone",         color: "#C8B89A", chipload: buildChiploads(0.75), warn: "⚠ Bone dust is hazardous — use dust extraction and N95 mask. Prioritise higher feed over high RPM to avoid heat (burns above 47°C)." },
+      { name: "Horn",         color: "#6B4C35", chipload: buildChiploads(0.65), warn: "⚠ Horn delaminates under heavy cuts — shallow passes only (≤1mm). Lower RPM (12–16k) to avoid heat softening the layers." },
+      { name: "TUSQ / Synth", color: "#B0A898", chipload: buildChiploads(0.90) },
     ];
 
     const GROUP_COLORS = { micro: "#ef4444", small: "#d4872a", standard: "#1f9e52", large: "#4a90d9" };
@@ -460,6 +463,11 @@
                     </button>
                   ))}
                 </div>
+                {mat.warn && (
+                  <div style={{ marginTop:"10px", background:"#fff8ee", border:`1px solid ${mat.color}80`, borderRadius:"6px", padding:"10px", fontSize:"14px", color:"var(--yellow)", lineHeight:"1.6" }}>
+                    {mat.warn}
+                  </div>
+                )}
               </div>
 
               {/* Tool */}
