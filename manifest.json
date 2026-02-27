@@ -1,0 +1,19 @@
+{
+  "name": "CNC Feeds & Speeds — Stoyanov Guitars",
+  "short_name": "Feeds & Speeds",
+  "description": "Metric/Imperial CNC feeds and speeds calculator for the Onefinity Woodworker",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "theme_color": "#2c2018",
+  "background_color": "#f5f0e8",
+  "icons": [
+    {
+      "src": "logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
